@@ -24,6 +24,12 @@ local function load(key)
     api.load_script()
 end
 
+local function trial_script()
+    lib:Destroy()
+    getgenv().element_load_delay = 0.1
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/2d2645995af62a16bd99af0e288ce67b.lua"))()
+end
+
 if not isfolder("Riddance") then
     makefolder("Riddance")
 end
@@ -102,6 +108,13 @@ if visible then
             setclipboard("https://discord.gg/hbHEv8QvE9")
             notify(copymsg)
         end
+    })
+
+    tab:CreateSection("Trial")
+
+    tab:CreateButton({
+        Name = "Execute Trial Script",
+        Callback = trial_script
     })
 
     tab:CreateSection("Verification")
