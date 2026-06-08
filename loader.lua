@@ -1,8 +1,5 @@
 local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
 api.script_id = "2450de615decd6aa6f8930ece4879d3b"
-api.load_script()
-
---[[
 local visible = true
 local copymsg = "Copied to clipboard!"
 
@@ -133,4 +130,3 @@ if visible then
         end
     })
 end
-]]
