@@ -24,11 +24,6 @@ local function load(key)
     api.load_script()
 end
 
-local function trial_script()
-    lib:Destroy()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/2d2645995af62a16bd99af0e288ce67b.lua"))()
-end
-
 if not isfolder("Riddance") then
     makefolder("Riddance")
 end
@@ -113,7 +108,10 @@ if visible then
 
     tab:CreateButton({
         Name = "Execute Trial Script",
-        Callback = trial_script
+        Callback = function()
+            lib:Destroy()
+            loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/2d2645995af62a16bd99af0e288ce67b.lua"))()
+        end
     })
 
     tab:CreateSection("Verification")
