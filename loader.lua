@@ -73,7 +73,7 @@ if visible then
     tab:CreateButton({
         Name = "Linkvertise",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Premium_Linkvertise-IbUHRQbdLbnF")
+            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Linkvertise-IbUHRQbdLbnF")
             notify(copymsg)
         end
     })
@@ -81,7 +81,7 @@ if visible then
     tab:CreateButton({
         Name = "Lootlabs",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Premium_Lootlabs-uIsDXzXErYSY")
+            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Lootlabs-uIsDXzXErYSY")
             notify(copymsg)
         end
     })
@@ -89,7 +89,7 @@ if visible then
     tab:CreateButton({
         Name = "Work.ink",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Premium_Workink-vUfZJgriPsXO")
+            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Workink-vUfZJgriPsXO")
             notify(copymsg)
         end
     })
