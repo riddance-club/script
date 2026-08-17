@@ -44,6 +44,7 @@ if script_key then
 end
 
 if visible then
+    local base = "https://ads.luarmor.net/get_key?for="
     local lib = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
     local win = lib:CreateWindow({
@@ -73,7 +74,7 @@ if visible then
     tab:CreateButton({
         Name = "Linkvertise",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Linkvertise-IbUHRQbdLbnF")
+            setclipboard(base.."Riddance_Linkvertise-IbUHRQbdLbnF")
             notify(copymsg)
         end
     })
@@ -81,7 +82,7 @@ if visible then
     tab:CreateButton({
         Name = "Lootlabs",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Lootlabs-uIsDXzXErYSY")
+            setclipboard(base.."Riddance_Lootlabs-uIsDXzXErYSY")
             notify(copymsg)
         end
     })
@@ -89,7 +90,7 @@ if visible then
     tab:CreateButton({
         Name = "Work.ink",
         Callback = function()
-            setclipboard("https://ads.luarmor.net/get_key?for=Riddance_Workink-vUfZJgriPsXO")
+            setclipboard(base.."Riddance_Workink-vUfZJgriPsXO")
             notify(copymsg)
         end
     })
