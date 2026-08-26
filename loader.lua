@@ -67,7 +67,7 @@ if visible then
         })
     end
 
-    local tab = win:CreateTab("Key System", "key")
+    local tab = win:CreateTab("Main", "house")
 
     tab:CreateSection("Key System")
 
@@ -91,6 +91,16 @@ if visible then
         Name = "Work.ink",
         Callback = function()
             setclipboard(base.."Riddance_Workink-vUfZJgriPsXO")
+            notify(copymsg)
+        end
+    })
+
+    tab:CreateSection("Purchase Key")
+
+    tab:CreateButton({
+        Name = "Luarmor Purchasing System",
+        Callback = function()
+            setclipboard("https://roblox.com/games/start?launchData=luarmor&placeId=135098666169257")
             notify(copymsg)
         end
     })
