@@ -67,7 +67,7 @@ if visible then
         })
     end
 
-    local tab = win:CreateTab("Main", "info")
+    local tab = win:CreateTab("Main")
 
     tab:CreateSection("Key System")
 
