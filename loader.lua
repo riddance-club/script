@@ -1,5 +1,3 @@
-local TeleportService = game:GetService("TeleportService")
-
 local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
 api.script_id = "2450de615decd6aa6f8930ece4879d3b"
 local visible = true
@@ -94,15 +92,6 @@ if visible then
         Callback = function()
             setclipboard(base.."Riddance_Workink-vUfZJgriPsXO")
             notify(copymsg)
-        end
-    })
-
-    tab:CreateSection("Purchase Key")
-
-    tab:CreateButton({
-        Name = "Luarmor Purchasing System",
-        Callback = function()
-            TeleportService:Teleport(103425521286573)
         end
     })
 
